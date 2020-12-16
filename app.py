@@ -17,15 +17,14 @@
 import pandas as pd
 from datetime import datetime
 import requests
-from matplotlib import rcParams
+#from matplotlib import rcParams
 import numpy as np
-import json
-from flask import Flask, request, render_template
-from IPython.display import display, HTML, IFrame
+#import json
+from flask import Flask, request, render_template , Markup
+#from IPython.display import display, HTML, IFrame
 from plotly.offline import plot
 from plotly.graph_objs import Scatter
-from flask import Markup
-import plotly.graph_objects as go
+#import plotly.graph_objects as go
 
 
 def stock(sym, start, end, price):
