@@ -14,25 +14,13 @@
 # In[2]:
 
 
-import seaborn as sns
-import matplotlib.pyplot as plt
 import pandas as pd
 from datetime import datetime
-#import unirest
 import requests
 from matplotlib import rcParams
-import pandas as pd
 import numpy as np
-get_ipython().run_line_magic('matplotlib', 'inline')
-import matplotlib
-import seaborn as sns
-sns.set()
-import matplotlib.pyplot as plt
 import json
-import requests
-import matplotlib.dates as mdates
-from flask import Flask, request
-from flask import Flask, render_template
+from flask import Flask, request, render_template
 from IPython.display import display, HTML, IFrame
 from plotly.offline import plot
 from plotly.graph_objs import Scatter
@@ -118,6 +106,7 @@ def need_input():
 def get_form():
     return render_template('index.html')
 
+if __name__ == '__main__':
+    app.run()
 
-if __name__ == "__main__": 
-        app.run() 
+
